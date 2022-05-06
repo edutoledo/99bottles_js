@@ -8,8 +8,9 @@
     "jest": "^26.0.1"
   },
   "scripts": {
-    "eslint": "eslint lib test",
-    "test": "jest"
+    "lint": "eslint .",
+    "test": "jest",
+    "format": "prettier --write '**/*.js'"
   },
   "jest": {
     "testEnvironment": "node"
@@ -46,7 +47,7 @@
       ],
       "semi": [
         "error",
-        "always"
+        "never"
       ]
     }
   }
